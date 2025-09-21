@@ -1,0 +1,84 @@
+body {
+    margin: 0; /* remove default margins on the body */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    background-color: black; /* Sets the backgroud color to white */
+    color: white;
+}
+
+header { /* Sets the backgroud image and its size */
+    background-image: url(images/cover.jpeg);
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 45em;
+    width: 99vw;
+}
+
+.cover { /* Sets the container over the header and aligns the text inside to center of screen. */
+    color: white;
+    height: 45em;
+    background: rgba(0, 0, 0, 0.5);
+    align-content: center;
+    text-align: center;
+}
+
+.post {/*making the container flexible for rearranging the elements for smaller screens*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+article{
+    position: relative;
+    height: 100%;
+    flex: 50%;
+    margin: auto;
+    line-height: 32px;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(100, 100, 100);
+}
+
+.link {
+    position: relative;
+    height: 800px;
+    flex: 50%;
+    text-align: center;
+}
+
+img {
+    height: 800px;
+    border-radius: 10%;
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
+}
+
+@keyframes text_increase {/*To add a little animation to the link when hover*/
+  from {font-size: 30px;}
+  to {font-size: 31px;}
+}
+
+article > a { /* Sets the color, decoration and style of the hyperlink */
+    text-decoration: none;
+    color: orangered;
+    font-size: 30px;
+    font-style: bold;
+}
+
+a:hover { /* Changes the decoration when hovers over the link */
+    animation-name: text_increase;
+    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 780px) {/*rearranging the elements on smaller screen size*/
+  article, .link {
+    flex: 100%;
+  }
+}

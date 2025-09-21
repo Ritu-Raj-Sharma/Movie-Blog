@@ -1,0 +1,77 @@
+body {
+    margin: 0; /* remove default margins on the body */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    background-color: white; /* Sets the backgroud color to white */
+}
+
+header { /* Sets the backgroud image and its size */
+    background-image: url(images/city.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+.cover { /* Sets the container over the header and aligns the text inside to center of screen. */
+    color: white;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    align-content: center;
+    text-align: center;
+}
+
+h1{ /*Sets the font size*/
+    font-size: 42px;
+}
+
+.author-profile{ /* Sets the container to center of screen. */
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.author-profile > img{ /* Sets the height width and border for the author image */
+    height: 100px;
+    width: 100px;
+    border: 5px solid orangered;
+    border-radius: 20%;
+    margin-top: -50px;
+}
+
+.post-container { /* Sets the width of the container containing all the posts to 60% of screen and aligns it to center */
+    width: 60%;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 100px;
+}
+
+a { /* Sets the color, decoration and style of the hyperlink */
+    text-decoration: none;
+    color: orangered;
+    font-size: 32px;
+    font-style: bold;
+}
+
+a:hover { /* Changes the decoration when hovers over the link */
+    text-decoration: underline;
+}
+
+div > p { /* Sets the text format and color */
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+}
+
+div > img { /* Sets the image size relative to the container */
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
+}
+/* Write more CSS here! */
